@@ -5,10 +5,11 @@ applications:
         preBuild:
           commands:
             - npm install
+            - ls -la
+            - chmod +x ./deploy-script.sh
         build:
           commands:
-            - chmod +x ./deploy-script.sh
-            - ./deploy-script.sh
+            - bash ./deploy-script.sh || (echo "Script failed!" && cat deploy-script.sh && exit 1)
       artifacts:
         baseDirectory: .next
         files:
