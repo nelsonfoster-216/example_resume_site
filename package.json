@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "if [ -d \"resume-2023-new\" ]; then cd resume-2023-new && npm run dev; else cd resume-2023 && npm run dev; fi",
-    "build": "if [ -d \"resume-2023-new\" ]; then cd resume-2023-new && npm run build; else cd resume-2023 && npm run build; fi",
-    "start": "if [ -d \"resume-2023-new\" ]; then cd resume-2023-new && npm run start; else cd resume-2023 && npm run start; fi"
+    "dev": "./deploy-script.sh && npm run serve",
+    "build": "./deploy-script.sh",
+    "serve": "next start -p 3000",
+    "start": "next start -p 3000"
+  },
+  "dependencies": {
+    "next": "^13.5.6"
   }
 } 

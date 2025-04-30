@@ -4,12 +4,10 @@ applications:
       phases:
         preBuild:
           commands:
-            - echo "Starting build process..."
-            - ls -la
-            - echo "Current directory: $(pwd)"
-            - chmod +x ./deploy-script.sh
+            - npm install
         build:
           commands:
+            - chmod +x ./deploy-script.sh
             - ./deploy-script.sh
       artifacts:
         baseDirectory: .next
@@ -18,6 +16,4 @@ applications:
       cache:
         paths:
           - node_modules/**/*
-          - resume-2023/node_modules/**/*
-          - resume-2023-new/node_modules/**/*
     appRoot: . 
