@@ -1,0 +1,7 @@
+{
+  "buildCommand": "cd resume-2023-new && npm run build",
+  "outputDirectory": "resume-2023-new/.next",
+  "devCommand": "cd resume-2023-new && npm run dev",
+  "installCommand": "cd resume-2023-new && npm install",
+  "framework": "nextjs"
+} 

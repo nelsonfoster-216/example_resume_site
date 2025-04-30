@@ -1,0 +1,11 @@
+{
+  "name": "sophia-reynolds-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": ["resume-2023-new"],
+  "scripts": {
+    "dev": "cd resume-2023-new && npm run dev",
+    "build": "cd resume-2023-new && npm run build",
+    "start": "cd resume-2023-new && npm run start"
+  }
+} 
