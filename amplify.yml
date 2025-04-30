@@ -1,0 +1,19 @@
+version: 1
+applications:
+  - frontend:
+      phases:
+        preBuild:
+          commands:
+            - cd resume-2023-new
+            - npm install
+        build:
+          commands:
+            - npm run build
+      artifacts:
+        baseDirectory: resume-2023-new/.next
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - resume-2023-new/node_modules/**/*
+    appRoot: . 

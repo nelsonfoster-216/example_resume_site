@@ -5,7 +5,7 @@
   "workspaces": ["resume-2023-new"],
   "scripts": {
     "dev": "cd resume-2023-new && npm run dev",
-    "build": "cd resume-2023-new && npm run build",
+    "build": "echo 'Build handled by amplify.yml'",
     "start": "cd resume-2023-new && npm run start"
   }
 } 
