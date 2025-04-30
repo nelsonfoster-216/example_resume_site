@@ -1,8 +1,8 @@
-2025-04-30T13:34:44.389Z [INFO]: # Cloning repository: git@github.com:nelsonfoster-216/example_resume_site.git
-2025-04-30T13:34:44.950Z [INFO]: 
-2025-04-30T13:34:44.951Z [INFO]: Cloning into 'example_resume_site'...
-2025-04-30T13:34:44.951Z [INFO]: # Switching to commit: 8f68075eac02c33f02776cfe36242266b8344606
-2025-04-30T13:34:44.962Z [INFO]: Note: switching to '8f68075eac02c33f02776cfe36242266b8344606'.
+2025-04-30T13:48:54.547Z [INFO]: # Cloning repository: git@github.com:nelsonfoster-216/example_resume_site.git
+2025-04-30T13:49:00.141Z [INFO]: 
+2025-04-30T13:49:00.216Z [INFO]: Cloning into 'example_resume_site'...
+2025-04-30T13:49:00.216Z [INFO]: # Switching to commit: dbc1e0f953189d00fb1e438a3689e5f49f090f83
+2025-04-30T13:49:00.227Z [INFO]: Note: switching to 'dbc1e0f953189d00fb1e438a3689e5f49f090f83'.
                                  You are in 'detached HEAD' state. You can look around, make experimental
                                  changes and commit them, and you can discard any commits you make in this
                                  state without impacting any branches by switching back to a branch.
@@ -12,153 +12,142 @@
                                  Or undo this operation with:
                                  git switch -
                                  Turn off this advice by setting config variable advice.detachedHead to false
-                                 HEAD is now at 8f68075 updated (again) deployment script
-2025-04-30T13:34:45.007Z [INFO]: Successfully cleaned up Git credentials
-2025-04-30T13:34:45.008Z [INFO]: # Checking for Git submodules at: /codebuild/output/src2588362094/src/example_resume_site/.gitmodules
-2025-04-30T13:34:45.013Z [INFO]: # Retrieving environment cache...
-2025-04-30T13:34:45.043Z [WARNING]: ! Unable to write cache: {"code":"ERR_BAD_REQUEST","message":"Request failed with status code 404"})}
-2025-04-30T13:34:45.043Z [INFO]: ---- Setting Up SSM Secrets ----
-2025-04-30T13:34:45.043Z [INFO]: SSM params {"Path":"/amplify/d3k83hk6g6weon/main/","WithDecryption":true}
-2025-04-30T13:34:45.090Z [WARNING]: !Failed to set up process.env.secrets
-2025-04-30T13:34:45.977Z [INFO]: # No package override configuration found.
-2025-04-30T13:34:46.044Z [INFO]: # Retrieving cache...
-2025-04-30T13:34:46.075Z [INFO]: # Retrieved cache
-2025-04-30T13:34:50.641Z [INFO]: ## Starting Backend Build
+                                 HEAD is now at dbc1e0f updated deployment script to fix directory issue
+2025-04-30T13:49:00.264Z [INFO]: Successfully cleaned up Git credentials
+2025-04-30T13:49:00.264Z [INFO]: # Checking for Git submodules at: /codebuild/output/src229174206/src/example_resume_site/.gitmodules
+2025-04-30T13:49:00.272Z [INFO]: # Retrieving environment cache...
+2025-04-30T13:49:00.330Z [INFO]: # Retrieved environment cache
+2025-04-30T13:49:00.331Z [INFO]: ---- Setting Up SSM Secrets ----
+2025-04-30T13:49:00.331Z [INFO]: SSM params {"Path":"/amplify/d3k83hk6g6weon/main/","WithDecryption":true}
+2025-04-30T13:49:00.403Z [WARNING]: !Failed to set up process.env.secrets
+2025-04-30T13:49:01.223Z [INFO]: # No package override configuration found.
+2025-04-30T13:49:01.276Z [INFO]: # Last deployed commit: 8f68075eac02c33f02776cfe36242266b8344606
+2025-04-30T13:49:01.289Z [INFO]: # Retrieving cache...
+2025-04-30T13:49:04.839Z [INFO]: # Extracting cache...
+2025-04-30T13:49:06.622Z [INFO]: # Extraction completed
+2025-04-30T13:49:06.639Z [INFO]: # Retrieved cache
+2025-04-30T13:49:11.307Z [INFO]: ## Starting Backend Build
                                  ## Checking for associated backend environment...
                                  ## No backend environment association found, continuing...
                                  ## Completed Backend Build
-2025-04-30T13:34:50.646Z [INFO]: ## Starting Frontend Build
+2025-04-30T13:49:11.311Z [INFO]: {"backendDuration": 0}
+                                 ## Starting Frontend Build
                                  # Starting phase: preBuild
                                  # Executing command: npm install
-2025-04-30T13:35:09.499Z [INFO]: added 22 packages, and audited 23 packages in 15s
-2025-04-30T13:35:09.505Z [INFO]: 3 packages are looking for funding
+2025-04-30T13:49:24.835Z [INFO]: up to date, audited 24 packages in 9s
+2025-04-30T13:49:24.840Z [INFO]: 3 packages are looking for funding
                                  run `npm fund` for details
-2025-04-30T13:35:09.536Z [INFO]: 1 high severity vulnerability
+2025-04-30T13:49:24.869Z [INFO]: 1 high severity vulnerability
                                  To address all issues (including breaking changes), run:
                                  npm audit fix --force
                                  Run `npm audit` for details.
-2025-04-30T13:35:09.548Z [INFO]: # Executing command: ls -la
-2025-04-30T13:35:09.579Z [INFO]: total 92
-                                 drwxr-xr-x.  5 amplify amplify 16384 Apr 30 13:35 .
-                                 drwxr-xr-x.  3 amplify amplify    51 Apr 30 13:34 ..
-                                 -rw-r--r--.  1 amplify amplify  8196 Apr 30 13:34 .DS_Store
-                                 drwxr-xr-x.  8 amplify amplify   163 Apr 30 13:34 .git
-                                 -rw-r--r--.  1 amplify amplify    66 Apr 30 13:34 .gitattributes
-                                 -rw-r--r--.  1 amplify amplify  3818 Apr 30 13:34 README.md
-                                 -rw-r--r--.  1 amplify amplify     0 Apr 30 13:34 __cache.tar
-                                 -rwxrwxrwx.  1 amplify amplify  1563 Apr 30 13:34 amplify.sh
-                                 -rw-r--r--.  1 amplify amplify   467 Apr 30 13:34 amplify.yml
-                                 -rwxr-xr-x.  1 amplify amplify  3982 Apr 30 13:34 deploy-script.sh
-                                 -rw-r--r--.  1 amplify amplify   176 Apr 30 13:34 next.config.js
-                                 drwxr-xr-x. 24 amplify amplify 16384 Apr 30 13:35 node_modules
-                                 -rw-r--r--.  1 amplify amplify 14332 Apr 30 13:35 package-lock.json
-                                 -rw-r--r--.  1 amplify amplify   278 Apr 30 13:34 package.json
-                                 drwxr-xr-x.  2 amplify amplify    22 Apr 30 13:34 pages
-                                 -rw-r--r--.  1 amplify amplify   241 Apr 30 13:34 vercel.json
-                                 # Executing command: chmod +x ./deploy-script.sh
-2025-04-30T13:35:09.580Z [INFO]: # Completed phase: preBuild
+2025-04-30T13:49:24.878Z [INFO]: # Executing command: ls -la
+2025-04-30T13:49:24.910Z [INFO]: total 104
+                                 drwxr-xr-x.  5 amplify amplify 16384 Apr 30 13:49 .
+                                 drwxr-xr-x.  3 amplify amplify    51 Apr 30 13:48 ..
+                                 -rw-r--r--.  1 amplify amplify  8196 Apr 30 13:49 .DS_Store
+                                 drwxr-xr-x.  8 amplify amplify   163 Apr 30 13:49 .git
+                                 -rw-r--r--.  1 amplify amplify    66 Apr 30 13:49 .gitattributes
+                                 -rw-r--r--.  1 amplify amplify 12821 Apr 30 13:49 BUILD.txt
+                                 -rw-r--r--.  1 amplify amplify     0 Apr 30 13:49 DEPLOY.txt
+                                 -rw-r--r--.  1 amplify amplify  3818 Apr 30 13:49 README.md
+                                 -rwxrwxrwx.  1 amplify amplify  1563 Apr 30 13:49 amplify.sh
+                                 -rw-r--r--.  1 amplify amplify   467 Apr 30 13:49 amplify.yml
+                                 -rwxr-xr-x.  1 amplify amplify  5203 Apr 30 13:49 deploy-script.sh
+                                 -rw-r--r--.  1 amplify amplify   156 Apr 30 13:49 next.config.js
+                                 drwxr-xr-x. 24 amplify amplify 16384 Apr 30 13:49 node_modules
+                                 -rw-r--r--.  1 amplify amplify  6341 Apr 30 13:49 package-lock.json
+                                 -rw-r--r--.  1 amplify amplify   278 Apr 30 13:49 package.json
+                                 drwxr-xr-x.  2 amplify amplify    57 Apr 30 13:49 pages
+                                 -rw-r--r--.  1 amplify amplify   241 Apr 30 13:49 vercel.json
+2025-04-30T13:49:24.911Z [INFO]: # Executing command: chmod +x ./deploy-script.sh
+2025-04-30T13:49:24.912Z [INFO]: # Completed phase: preBuild
                                  # Starting phase: build
-2025-04-30T13:35:09.581Z [INFO]: # Executing command: bash ./deploy-script.sh || (echo "Script failed!" && cat deploy-script.sh && exit 1)
-2025-04-30T13:35:09.583Z [WARNING]: ++ pwd
-                                    + echo 'Current directory:' /codebuild/output/src2588362094/src/example_resume_site
+                                 # Executing command: bash ./deploy-script.sh || (echo "Script failed!" && cat deploy-script.sh && exit 1)
+2025-04-30T13:49:24.913Z [WARNING]: ++ pwd
+2025-04-30T13:49:24.914Z [WARNING]: + echo 'Current directory:' /codebuild/output/src229174206/src/example_resume_site
                                     + echo 'Listing all files and directories:'
                                     + ls -la
-2025-04-30T13:35:09.583Z [INFO]: Current directory: /codebuild/output/src2588362094/src/example_resume_site
+2025-04-30T13:49:24.914Z [INFO]: Current directory: /codebuild/output/src229174206/src/example_resume_site
                                  Listing all files and directories:
-2025-04-30T13:35:09.584Z [INFO]: total 92
-                                 drwxr-xr-x.  5 amplify amplify 16384 Apr 30 13:35 .
-                                 drwxr-xr-x.  3 amplify amplify    51 Apr 30 13:34 ..
-                                 -rw-r--r--.  1 amplify amplify  8196 Apr 30 13:34 .DS_Store
-                                 drwxr-xr-x.  8 amplify amplify   163 Apr 30 13:34 .git
-                                 -rw-r--r--.  1 amplify amplify    66 Apr 30 13:34 .gitattributes
-                                 -rw-r--r--.  1 amplify amplify  3818 Apr 30 13:34 README.md
-                                 -rw-r--r--.  1 amplify amplify     0 Apr 30 13:34 __cache.tar
-                                 -rwxrwxrwx.  1 amplify amplify  1563 Apr 30 13:34 amplify.sh
-                                 -rw-r--r--.  1 amplify amplify   467 Apr 30 13:34 amplify.yml
-                                 -rwxr-xr-x.  1 amplify amplify  3982 Apr 30 13:34 deploy-script.sh
-                                 -rw-r--r--.  1 amplify amplify   176 Apr 30 13:34 next.config.js
-                                 drwxr-xr-x. 24 amplify amplify 16384 Apr 30 13:35 node_modules
-                                 -rw-r--r--.  1 amplify amplify 14332 Apr 30 13:35 package-lock.json
-                                 -rw-r--r--.  1 amplify amplify   278 Apr 30 13:34 package.json
-                                 drwxr-xr-x.  2 amplify amplify    22 Apr 30 13:34 pages
-                                 -rw-r--r--.  1 amplify amplify   241 Apr 30 13:34 vercel.json
-2025-04-30T13:35:09.584Z [WARNING]: + TRIED_MAIN_DIRS=false
-                                    + '[' -d resume-2023-new ']'
-                                    + '[' -d resume-2023 ']'
-2025-04-30T13:35:09.584Z [WARNING]: + '[' false = false ']'
-                                    + echo 'Searching for any Next.js project in subdirectories...'
-                                    + for dir in */
-                                    + is_nextjs_project node_modules
-                                    + '[' -f node_modules/package.json ']'
-                                    + echo 'node_modules is not a valid Next.js project'
-                                    + return 1
-                                    + for dir in */
-                                    + is_nextjs_project pages
-                                    + '[' -f pages/package.json ']'
-                                    + echo 'pages is not a valid Next.js project'
-                                    + return 1
-                                    + echo 'No successful build found, creating fallback'
-                                    + create_fallback_build
-                                    + echo 'Creating fallback build in root directory'
-                                    + '[' '!' -d pages ']'
-                                    + '[' '!' -f next.config.js ']'
-                                    + echo 'Building fallback Next.js app'
-                                    + '[' -f package-lock.json ']'
-                                    + npm ci --prefer-offline
-2025-04-30T13:35:09.585Z [INFO]: Searching for any Next.js project in subdirectories...
-                                 node_modules is not a valid Next.js project
-                                 pages is not a valid Next.js project
-                                 No successful build found, creating fallback
-                                 Creating fallback build in root directory
-                                 Building fallback Next.js app
-2025-04-30T13:35:15.447Z [INFO]: added 23 packages, and audited 24 packages in 6s
-2025-04-30T13:35:15.453Z [INFO]: 3 packages are looking for funding
+2025-04-30T13:49:24.915Z [INFO]: total 104
+                                 drwxr-xr-x.  5 amplify amplify 16384 Apr 30 13:49 .
+                                 drwxr-xr-x.  3 amplify amplify    51 Apr 30 13:48 ..
+                                 -rw-r--r--.  1 amplify amplify  8196 Apr 30 13:49 .DS_Store
+                                 drwxr-xr-x.  8 amplify amplify   163 Apr 30 13:49 .git
+                                 -rw-r--r--.  1 amplify amplify    66 Apr 30 13:49 .gitattributes
+                                 -rw-r--r--.  1 amplify amplify 12821 Apr 30 13:49 BUILD.txt
+                                 -rw-r--r--.  1 amplify amplify     0 Apr 30 13:49 DEPLOY.txt
+                                 -rw-r--r--.  1 amplify amplify  3818 Apr 30 13:49 README.md
+                                 -rwxrwxrwx.  1 amplify amplify  1563 Apr 30 13:49 amplify.sh
+                                 -rw-r--r--.  1 amplify amplify   467 Apr 30 13:49 amplify.yml
+                                 -rwxr-xr-x.  1 amplify amplify  5203 Apr 30 13:49 deploy-script.sh
+                                 -rw-r--r--.  1 amplify amplify   156 Apr 30 13:49 next.config.js
+                                 drwxr-xr-x. 24 amplify amplify 16384 Apr 30 13:49 node_modules
+                                 -rw-r--r--.  1 amplify amplify  6341 Apr 30 13:49 package-lock.json
+                                 -rw-r--r--.  1 amplify amplify   278 Apr 30 13:49 package.json
+                                 drwxr-xr-x.  2 amplify amplify    57 Apr 30 13:49 pages
+                                 -rw-r--r--.  1 amplify amplify   241 Apr 30 13:49 vercel.json
+2025-04-30T13:49:24.915Z [INFO]: Using root directory for Next.js project
+2025-04-30T13:49:24.915Z [WARNING]: + TRIED_MAIN_DIRS=false
+                                    + '[' -f package.json ']'
+                                    + '[' -f next.config.js ']'
+                                    + '[' -d pages ']'
+                                    + echo 'Using root directory for Next.js project'
+                                    + npm install
+2025-04-30T13:49:27.046Z [INFO]: up to date, audited 24 packages in 2s
+2025-04-30T13:49:27.046Z [INFO]: 3 packages are looking for funding
                                  run `npm fund` for details
-2025-04-30T13:35:15.481Z [INFO]: 1 high severity vulnerability
+2025-04-30T13:49:27.074Z [INFO]: 1 high severity vulnerability
                                  To address all issues (including breaking changes), run:
                                  npm audit fix --force
                                  Run `npm audit` for details.
-2025-04-30T13:35:15.503Z [WARNING]: + npx next build
-2025-04-30T13:35:16.326Z [INFO]: ⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
-2025-04-30T13:35:16.332Z [INFO]: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+2025-04-30T13:49:27.083Z [WARNING]: + npm run build
+2025-04-30T13:49:27.179Z [INFO]: > sophia-reynolds-portfolio@1.0.0 build
+                                 > next build
+2025-04-30T13:49:27.687Z [INFO]: ⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+2025-04-30T13:49:27.693Z [INFO]: Attention: Next.js now collects completely anonymous telemetry regarding usage.
                                  This information is used to shape Next.js' roadmap and prioritize features.
-2025-04-30T13:35:16.332Z [INFO]: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+                                 You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
                                  https://nextjs.org/telemetry
-2025-04-30T13:35:16.394Z [INFO]: Linting and checking validity of types ...
-2025-04-30T13:35:16.477Z [INFO]: Creating an optimized production build ...
-2025-04-30T13:35:18.144Z [INFO]: ✓ Compiled successfully
-2025-04-30T13:35:18.145Z [INFO]: Collecting page data ...
-2025-04-30T13:35:18.533Z [INFO]: Generating static pages (0/3) ...
-2025-04-30T13:35:18.842Z [INFO]: ✓ Generating static pages (3/3)
-2025-04-30T13:35:19.051Z [INFO]: Finalizing page optimization ...
+2025-04-30T13:49:27.751Z [INFO]: Linting and checking validity of types ...
+2025-04-30T13:49:27.838Z [INFO]: Creating an optimized production build ...
+2025-04-30T13:49:28.016Z [WARNING]: ⚠ Found lockfile missing swc dependencies, run next locally to automatically patch
+2025-04-30T13:49:29.356Z [INFO]: ✓ Compiled successfully
+2025-04-30T13:49:29.356Z [INFO]: Collecting page data ...
+2025-04-30T13:49:29.725Z [INFO]: Generating static pages (0/3) ...
+2025-04-30T13:49:30.020Z [INFO]: ✓ Generating static pages (3/3)
+2025-04-30T13:49:30.231Z [INFO]: Finalizing page optimization ...
                                  Collecting build traces ...
-2025-04-30T13:35:24.026Z [INFO]: 
-2025-04-30T13:35:24.030Z [INFO]: Route (pages)                              Size     First Load JS
-                                 ┌ ○ /                                      608 B          79.8 kB
-                                 └ ○ /404                                   180 B          79.4 kB
-                                 + First Load JS shared by all              79.2 kB
-                                 ├ chunks/framework-6d18543c2c368b0c.js   45.4 kB
+2025-04-30T13:49:34.961Z [INFO]: 
+2025-04-30T13:49:34.965Z [INFO]: Route (pages)                              Size     First Load JS
+                                 ┌ ○ /                                      799 B          80.1 kB
+                                 ├   /_app                                  0 B            79.3 kB
+                                 └ ○ /404                                   180 B          79.5 kB
+                                 + First Load JS shared by all              79.3 kB
+                                 ├ chunks/framework-fae63b21a27d6472.js   45.4 kB
                                  ├ chunks/main-22b029abc2beadb0.js        32.9 kB
-                                 ├ chunks/pages/_app-c54702eb327175a3.js  205 B
-                                 └ chunks/webpack-7d45971437c161ca.js     728 B
+                                 ├ chunks/pages/_app-309e548817b03bbd.js  289 B
+                                 └ chunks/webpack-fd8027ecb5121007.js     770 B
                                  ○  (Static)  automatically rendered as static HTML (uses no initial props)
-2025-04-30T13:35:24.056Z [WARNING]: + echo 'Fallback build completed'
-2025-04-30T13:35:24.056Z [INFO]: Fallback build completed
-2025-04-30T13:35:24.056Z [WARNING]: + exit 0
-2025-04-30T13:35:24.056Z [INFO]: # Completed phase: build
+2025-04-30T13:49:34.988Z [WARNING]: + echo 'Build completed in root directory'
+                                    + exit 0
+2025-04-30T13:49:34.989Z [INFO]: Build completed in root directory
+                                 # Completed phase: build
                                  ## Completed Frontend Build
-2025-04-30T13:35:24.105Z [INFO]: ## Build completed successfully
-2025-04-30T13:35:24.106Z [INFO]: # Starting caching...
-2025-04-30T13:35:24.108Z [INFO]: # Creating cache artifact...
-2025-04-30T13:35:25.633Z [INFO]: # Created cache artifact
-2025-04-30T13:35:25.634Z [INFO]: # Uploading cache artifact...
-2025-04-30T13:35:28.778Z [INFO]: # Uploaded cache artifact
-2025-04-30T13:35:28.849Z [INFO]: # Caching completed
-2025-04-30T13:35:28.928Z [INFO]: # Starting build artifact upload process...
-2025-04-30T13:35:29.058Z [INFO]: # Uploading build artifact '__artifacts.zip'...
-2025-04-30T13:35:29.178Z [INFO]: # Build artifact upload completed
-2025-04-30T13:35:29.178Z [INFO]: # Starting environment caching...
-2025-04-30T13:35:29.179Z [INFO]: # Uploading environment cache artifact...
-2025-04-30T13:35:29.253Z [INFO]: # Uploaded environment cache artifact
-2025-04-30T13:35:29.253Z [INFO]: # Environment caching completed
+2025-04-30T13:49:35.039Z [INFO]: ## Build completed successfully
+2025-04-30T13:49:35.039Z [INFO]: # Starting caching...
+2025-04-30T13:49:35.042Z [INFO]: # Creating cache artifact...
+2025-04-30T13:49:36.234Z [INFO]: # Created cache artifact
+2025-04-30T13:49:36.234Z [INFO]: # Uploading cache artifact...
+2025-04-30T13:49:39.368Z [INFO]: # Uploaded cache artifact
+2025-04-30T13:49:39.446Z [INFO]: # Caching completed
+2025-04-30T13:49:39.488Z [INFO]: # Last deployed commit: 8f68075eac02c33f02776cfe36242266b8344606
+2025-04-30T13:49:39.514Z [INFO]: # Starting build artifact upload process...
+2025-04-30T13:49:39.629Z [INFO]: # Uploading build artifact '__artifacts.zip'...
+2025-04-30T13:49:39.776Z [INFO]: # Build artifact upload completed
+2025-04-30T13:49:39.776Z [INFO]: # Starting environment caching...
+2025-04-30T13:49:39.776Z [INFO]: # Uploading environment cache artifact...
+2025-04-30T13:49:39.848Z [INFO]: # Uploaded environment cache artifact
+2025-04-30T13:49:39.848Z [INFO]: # Environment caching completed
 
