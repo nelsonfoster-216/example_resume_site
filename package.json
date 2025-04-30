@@ -2,10 +2,9 @@
   "name": "sophia-reynolds-portfolio",
   "version": "1.0.0",
   "private": true,
-  "workspaces": ["resume-2023-new"],
   "scripts": {
-    "dev": "cd resume-2023-new && npm run dev",
-    "build": "echo 'Build handled by amplify.yml'",
-    "start": "cd resume-2023-new && npm run start"
+    "dev": "if [ -d \"resume-2023-new\" ]; then cd resume-2023-new && npm run dev; else cd resume-2023 && npm run dev; fi",
+    "build": "if [ -d \"resume-2023-new\" ]; then cd resume-2023-new && npm run build; else cd resume-2023 && npm run build; fi",
+    "start": "if [ -d \"resume-2023-new\" ]; then cd resume-2023-new && npm run start; else cd resume-2023 && npm run start; fi"
   }
 } 

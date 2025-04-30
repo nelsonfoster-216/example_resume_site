@@ -4,16 +4,20 @@ applications:
       phases:
         preBuild:
           commands:
-            - cd resume-2023-new
-            - npm install
+            - echo "Starting build process..."
+            - ls -la
+            - echo "Current directory: $(pwd)"
+            - chmod +x ./deploy-script.sh
         build:
           commands:
-            - npm run build
+            - ./deploy-script.sh
       artifacts:
-        baseDirectory: resume-2023-new/.next
+        baseDirectory: .next
         files:
           - '**/*'
       cache:
         paths:
+          - node_modules/**/*
+          - resume-2023/node_modules/**/*
           - resume-2023-new/node_modules/**/*
     appRoot: . 
