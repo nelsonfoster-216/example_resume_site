@@ -1,2 +1,0 @@
-2025-04-30T13:35:47 [INFO]: Beginning deployment for application d3k83hk6g6weon, branch:main, buildId 0000000005
-2025-04-30T13:35:55 [INFO]: Deployment complete
