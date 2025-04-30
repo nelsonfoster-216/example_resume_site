@@ -105,6 +105,19 @@ is_nextjs_project() {
 # Try primary directories first
 TRIED_MAIN_DIRS=false
 
+# First check if the Next.js project is in the root directory
+if [ -f "package.json" ] && [ -f "next.config.js" ] && [ -d "pages" ]; then
+  echo 'Using root directory for Next.js project'
+  npm install
+  if npm run build; then
+    echo 'Build completed in root directory'
+    exit 0
+  else
+    echo 'Build in root directory failed, trying subdirectories'
+    TRIED_MAIN_DIRS=true
+  fi
+fi
+
 # Try resume-2023-new first (as specified in the original config)
 if [ -d "resume-2023-new" ] && is_nextjs_project "resume-2023-new"; then
   echo 'Using resume-2023-new directory'
